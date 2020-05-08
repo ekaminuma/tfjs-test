@@ -26,14 +26,11 @@
         </table>
   <!-- ========================================================================================== --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>      
-  <canvas id="simple" style="position: relative; height:100; width:150"></canvas>
-
-  <!-- type: 'doughnut', -->
-  <!-- =====================[chart]===================================================================== -->       
+  <canvas id="simple" style="position:relative;height:100;width:150"></canvas>
   <script>
   var ctx = document.getElementById("myPiChart");
   var myPieChart = new Chart(ctx, {
-    type: 'pie',
+    type: "pie",
     data: {
       labels: ["A", "O", "B", "AB"],
       datasets: [{
@@ -54,7 +51,7 @@
     }
   });
   </script>
-        
+  <!-- =====================[chart]===================================================================== -->               
   <!-- ========================================================================================== --> 
         
         <script>
