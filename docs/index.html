@@ -26,23 +26,22 @@
         </table>
   <!-- ========================================================================================== --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>      
-  <canvas id="myPieChart" style="width: 100%; height:100px;"></canvas>
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script> -->
-        
+  <canvas id="simple" style="width: 100%; height:100px;"></canvas>
+
+  <!-- type: 'doughnut', -->
   <!-- =====================[chart]===================================================================== -->       
   <script>
   var ctx = document.getElementById("myPiChart");
   var myPieChart = new Chart(ctx, {
     type: 'pie',
-    <!-- type: 'doughnut', -->
     data: {
-      labels: ["A型", "O型", "B型", "AB型"],
+      labels: ["A", "O", "B", "AB"],
       datasets: [{
           backgroundColor: [
-              "#BB5179",
-              "#FAFF67",
-              "#58A27C",
-              "#3C00FF"
+              "cornflowerblue", 
+              "olivedrab", 
+              "orange", 
+              "tomato"
           ],
           data: [38, 31, 21, 10]
       }]
