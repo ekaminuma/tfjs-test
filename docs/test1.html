@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.3"></script>
+        <meta charset="utf-8">
+        <title>ML graph chart</title> 
+        <style type="text/css">
+		<!--
+		#chart-container { height : 300px}
+		-->
+		</style>
+    </head>
+    <body>
+  <!-- background: #F5F5F5;  -->  
+  <!-- ========================================================================================== -->      
+        Tensorflow.js Test Code [1]<hr/>
+        20/5/8 Eli Kaminuma
+  <!-- ========================================================================================== -->      
+        
+   <table border="2" style="border-collapse: collapse; border-color: red">
+            <tr>
+                <th>Language</th>
+                <td>Python</td>
+            </tr>
+            <tr>
+                <th>library</th>
+                <td>Tensorflow.js</td>
+            </tr>
+            <tr>
+                <th>Dataset</th>
+                <td>MNIST</td>
+            </tr>
+            <tr>
+                <th>Model</th>
+                <td>CNN</td>
+            </tr>
+   </table>
+  <!-- ========================================================================================== --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>      
+  <div id="chart-container"><canvas id="myPiChart" width="0.8" height="0.8"></canvas></div>
+  <hr>
+  <script>
+  var ctx = document.getElementById("myPiChart");
+  var myPieChart = new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels: ["A", "O", "B", "AB"],
+      datasets: [{
+          backgroundColor: [
+              "cornflowerblue", 
+              "olivedrab", 
+              "orange", 
+              "tomato"
+          ],
+          data: [38, 31, 21, 10]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'BLoodType'
+      }
+    }
+  });
+  </script>
+  <!-- =====================[chart]===================================================================== -->               
+  <!-- ========================================================================================== --> 
+        
+    
+    
+    </body>
+</html>
+
